@@ -1,0 +1,14 @@
+password = "admin"
+attempts = 0
+
+while True:
+    user_password = input("Введите пароль: ")
+    attempts += 1
+
+    if user_password == password:
+        print("Доступ разрешен")
+        break
+
+    if attempts == 3:
+        print("Вход заблокирован")
+        break
